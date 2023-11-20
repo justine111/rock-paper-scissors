@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>ROCK PAPER SCISSOR</title>
+
+        <style>
+            body {
+                min-width: 100vh;
+                margin-top: 40px;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 40px;
+                text-align: center;
+            }
+
+            .choices {
+                display: flex;
+                height: 400px;
+            }
+
+            button {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 40px;
+                font-weight: 600;
+                width: 400px;
+                padding: 15px 25px;
+                text-align: center;
+                cursor: pointer;
+                outline: none;
+                color: #fff;
+                background-color: slategray;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 20px #999;
+                margin: 10px;
+            }
+
+            button:hover {
+                color: black;
+                background-color: #A6FF96;
+            }
+
+            button:active {
+                background-color: black;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+
+        </style>
+    </head>
+
+
+    <body>
+        <div class="choices">
+            <button class="rock">ROCK</button>
+            <button class="paper">PAPER</button>
+            <button class="scissors">SCISSOR</button>
+        </div>
+
+        <div class="text results">
+            <p class="roundResult">Click above to start the match! 
+                <br>First to 5 points ends the game. </p>
+            <div class="points">
+                <p>Player: <span class="player"></span></p>
+                <p>Computer: <span class="computer"></span></p>
+            </div>
+        </div>
+    </body>
+
+<script src='main.js'></script>
+</html>
